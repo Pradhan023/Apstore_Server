@@ -37,6 +37,7 @@ app.use('/api/cart',cartroutes);
 app.use('/api/coupons',couponroutes);
 app.use('/api/payment',paymentroutes);
 app.use('/api/analytics',analyticsroutes);
+app.use('/health-check', (req, res) => res.send('OK'));
   
 
 app.listen(PORT,()=>{
