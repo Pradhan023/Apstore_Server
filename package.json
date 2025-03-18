@@ -4,7 +4,8 @@
   "description": "Ap store server",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
+    "dev:con":"concurrently \"cd .. && cd Client && npm run dev\" \"npm run dev\"",
+    "dev": "nodemon server.js",
     "start": "node server.js"
   },
   "keywords": [],
